@@ -5,7 +5,7 @@ class Sample
 {
     public:
 
-        int publicint;
+        int     publicint;
 
         Sample(void);
         ~Sample(void);
@@ -14,9 +14,9 @@ class Sample
     
     private:
 
-        int privateint;
+        int     _privateint;
 
-        void    privatebar(void) const;
+        void    _privatebar(void) const;
 
 };
 

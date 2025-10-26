@@ -1,5 +1,5 @@
 CC = c++
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = megaphone
 RM = rm -f
 
