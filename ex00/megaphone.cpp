@@ -1,36 +1,38 @@
-#include <ios>
 #include <iostream>
+#include <cctype>
+#include <cstdio>
 
-/*
-class Message
+void    print_arg(char *str)
 {
-    public:
-        std::string msg;
-        void    toupperMsg(std::string msg);
-};
+    int     i;
+    char    c;
 
-void    Message::toupperMsg(std::string msg)
-{
-    //for ()
+    i = 0;
+    while (str[i])
+    {
+        c = str[i];
+        putchar(toupper(c));
+        i++;
+    }
 }
-*/
-int main(void)
-//int	main(int argc, char** argv)
-{
-    /*
-    char    *output;
 
-    output = argv[1];
+int	main(int argc, char** argv)
+{
+    int     i;
+    
     if (argc > 1)
     {
-        std::cout << std::uppercase << output;
-        //std::cout << argv[1];
+        i = 1;
+        while (i < argc)
+        {
+            print_arg(argv[i]);
+            if (i < (argc - 1))
+                std::cout << " ";
+            i++;
+        }
+        std::cout << "\n";
     }
+    else
+        std::cout << "* LOUD AND UNBEARABLE NOISE *" << std::endl;
     return (0);
-*/
-std::cout << std::showbase << std::hex;
-  std::cout << std::uppercase << 77 << '\n';
-  std::cout << std::nouppercase << 77 << '\n';
-  std::cout << std::toupper << "hello" << '\n';
-  return (0);
 }
